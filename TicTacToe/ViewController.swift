@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     var txtField2: UITextField!
     var txtField1: UITextField!
+    var activePlayer = 1 //Cross
+    var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +43,9 @@ class ViewController: UIViewController {
             }
             print("Player 1: \(self.txtField1.text!)")
             print("Player 2: \(self.txtField2.text!)")
+            var newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "game") as! GameViewController
+            self.present(newGameViewController, animated: true, completion: nil)
+            
         }))
         self.present(alert, animated: true, completion: nil)
     }
