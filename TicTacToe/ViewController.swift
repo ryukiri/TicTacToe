@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var txtField2: UITextField!
+    var txtField1: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,7 +22,39 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func newGame(_ sender: Any) {
+        let alert = UIAlertController(title: "Players", message: "Enter Players Names:", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addTextField(configurationHandler: addTextField1)
+        alert.addTextField(configurationHandler: addTextField2)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: { (UIAlertAction)in
+            print("Cancel")
+        }))
+        alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
+            if self.txtField1.text == "" {
+                self.txtField1.text = "Player 1"
+            }
+            
+            if self.txtField2.text == "" {
+                self.txtField2.text = "Player 2"
+            }
+            print("Player 1: \(self.txtField1.text!)")
+            print("Player 2: \(self.txtField2.text!)")
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
     
+    func addTextField1(textField: UITextField!)
+    {
+        textField.placeholder = "Player 1"
+        txtField1 = textField
+    }
     
+    func addTextField2(textField: UITextField!)
+    {
+        textField.placeholder = "Player 2"
+        txtField2 = textField
+    }
 }
 
