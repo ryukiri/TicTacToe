@@ -172,11 +172,11 @@ class GameViewController: UIViewController {
             print("Winner1")
             displayWinner()
             return true
-        } else if gameData[3] == gameData[4] && gameData[4] == gameData[5] && (gameData[3] == 1 || gameData[3] == 2){
+        } else if gameData[3] == gameData[4] && gameData[4] == gameData[5] && (gameData[3] == 1 || gameData[4] == 2){
             print("Winner2")
             displayWinner()
             return true
-        } else if gameData[6] == gameData[7] && gameData[7] == gameData[8] && (gameData[6] == 1 || gameData[6] == 2) {
+        } else if gameData[6] == gameData[7] && gameData[7] == gameData[8] && (gameData[6] == 1 || gameData[7] == 2) {
             print("Winner3")
             displayWinner()
             return true
@@ -220,12 +220,16 @@ class GameViewController: UIViewController {
     }
     
     func displayWinner() {
-        var activePlayer = 1
-        var gameData = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        //var activePlayer = 1
+        //var gameData = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         
-        let alert = UIAlertController(title: "Game Over", message: "Good game.", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
-            var newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "home") as! ViewController
+        let alert = UIAlertController(title: "Game Over", message: "Another Game?", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
+            let newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "home") as! ViewController
+            self.present(newGameViewController, animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
+            let newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "game") as! GameViewController
             self.present(newGameViewController, animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
