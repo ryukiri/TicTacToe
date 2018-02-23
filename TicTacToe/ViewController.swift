@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     var txtField1: UITextField!
     var activePlayer = 1 //Cross
     var gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    var player1 = UserDefaults.standard.string(forKey: "p1") ?? "Player 1"
+    var player2 = UserDefaults.standard.string(forKey: "p2") ?? "Player 2"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +43,9 @@ class ViewController: UIViewController {
             if self.txtField2.text == "" {
                 self.txtField2.text = "Player 2"
             }
-            print("Player 1: \(self.txtField1.text!)")
-            print("Player 2: \(self.txtField2.text!)")
+            
+            UserDefaults.standard.set(self.txtField1.text, forKey: "p1")
+            UserDefaults.standard.set(self.txtField2.text, forKey: "p2")
             var newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "game") as! GameViewController
             self.present(newGameViewController, animated: true, completion: nil)
             
