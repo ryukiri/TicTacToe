@@ -12,6 +12,8 @@
 		D911D1A320400D8F006E658D /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = D911D1A020400D8F006E658D /* Cross.png */; };
 		D911D1A520401770006E658D /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = D911D1A420401770006E658D /* white.png */; };
 		D911D1A7204018D0006E658D /* white2.png in Resources */ = {isa = PBXBuildFile; fileRef = D911D1A6204018D0006E658D /* white2.png */; };
+		D911D1A92040E486006E658D /* Board4.png in Resources */ = {isa = PBXBuildFile; fileRef = D911D1A82040E486006E658D /* Board4.png */; };
+		D911D1AB2040E625006E658D /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D911D1AA2040E625006E658D /* FiveViewController.swift */; };
 		D9AD78FE203F8F6F00ED18F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD78FD203F8F6F00ED18F8 /* AppDelegate.swift */; };
 		D9AD7900203F8F6F00ED18F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD78FF203F8F6F00ED18F8 /* ViewController.swift */; };
 		D9AD7903203F8F6F00ED18F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9AD7901203F8F6F00ED18F8 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		D911D1A020400D8F006E658D /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
 		D911D1A420401770006E658D /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		D911D1A6204018D0006E658D /* white2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white2.png; sourceTree = "<group>"; };
+		D911D1A82040E486006E658D /* Board4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Board4.png; sourceTree = "<group>"; };
+		D911D1AA2040E625006E658D /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		D9AD78FA203F8F6E00ED18F8 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AD78FD203F8F6F00ED18F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9AD78FF203F8F6F00ED18F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,10 +74,12 @@
 				D9AD7901203F8F6F00ED18F8 /* Main.storyboard */,
 				D9AD790F203F945E00ED18F8 /* GameViewController.swift */,
 				D9AD78FF203F8F6F00ED18F8 /* ViewController.swift */,
+				D911D1AA2040E625006E658D /* FiveViewController.swift */,
 				D9AD7904203F8F6F00ED18F8 /* Assets.xcassets */,
 				D9AD7906203F8F6F00ED18F8 /* LaunchScreen.storyboard */,
 				D9AD7909203F8F6F00ED18F8 /* Info.plist */,
 				D911D19E20400D8E006E658D /* Board.png */,
+				D911D1A82040E486006E658D /* Board4.png */,
 				D911D1A020400D8F006E658D /* Cross.png */,
 				D911D19F20400D8E006E658D /* Nought.png */,
 				D911D1A420401770006E658D /* white.png */,
@@ -148,6 +154,7 @@
 				D9AD7905203F8F6F00ED18F8 /* Assets.xcassets in Resources */,
 				D911D1A320400D8F006E658D /* Cross.png in Resources */,
 				D911D1A520401770006E658D /* white.png in Resources */,
+				D911D1A92040E486006E658D /* Board4.png in Resources */,
 				D9AD7903203F8F6F00ED18F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D911D1AB2040E625006E658D /* FiveViewController.swift in Sources */,
 				D9AD7900203F8F6F00ED18F8 /* ViewController.swift in Sources */,
 				D9AD7910203F945E00ED18F8 /* GameViewController.swift in Sources */,
 				D9AD78FE203F8F6F00ED18F8 /* AppDelegate.swift in Sources */,
