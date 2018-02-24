@@ -328,7 +328,11 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Tic Tac Toe" id="9kL-dC-j2A">
-                                        <barButtonItem key="rightBarButtonItem" title="Settings" id="sRJ-zM-yP0"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Settings" id="sRJ-zM-yP0">
+                                            <connections>
+                                                <action selector="settings:" destination="dGP-BP-Vf3" id="Lqp-xV-UVz"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -374,192 +378,539 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPT-9z-u28">
-                                <rect key="frame" x="25" y="243" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="Hsb-HP-8Wo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fN-jA-yr6">
-                                <rect key="frame" x="96" y="243" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="tAT-wG-J1j"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3X-0M-XCV">
-                                <rect key="frame" x="162" y="243" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="0no-A0-f1e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGA-mA-LnV">
-                                <rect key="frame" x="232" y="243" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="QCQ-hT-OJh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiY-fm-mRA">
-                                <rect key="frame" x="303" y="243" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="Jch-me-2Bv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31D-29-5P5">
-                                <rect key="frame" x="25" y="311" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="bKW-Df-mzW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-eC-MlG">
-                                <rect key="frame" x="96" y="311" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="HTF-bS-pSq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hiy-Hj-86b">
-                                <rect key="frame" x="162" y="311" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="vH8-nK-Yaj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msO-Gk-a2K">
-                                <rect key="frame" x="232" y="311" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="v2F-LJ-0mA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sg-Ic-Vaa">
-                                <rect key="frame" x="303" y="311" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="7xh-Z7-aSI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqx-rO-Rbk">
-                                <rect key="frame" x="25" y="381" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="Df8-hQ-gcY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEW-31-Rny">
-                                <rect key="frame" x="96" y="381" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="KVD-Wv-OYp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkz-l1-dBE">
-                                <rect key="frame" x="162" y="381" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="Aoy-Tu-Mrx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR8-FV-ckf">
-                                <rect key="frame" x="232" y="381" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="ALm-dh-KaE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lae-CF-fof">
-                                <rect key="frame" x="303" y="381" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="L7N-zv-6UO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfD-wC-fYl">
-                                <rect key="frame" x="25" y="452" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="AaO-Nj-NzP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVg-Lz-sSs">
-                                <rect key="frame" x="96" y="452" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="rEf-LA-i0V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD9-XJ-Tim">
-                                <rect key="frame" x="162" y="452" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="4Fy-oc-4cU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osU-0d-1bA">
-                                <rect key="frame" x="232" y="452" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="xbS-sX-g50"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2B-zH-KLC">
-                                <rect key="frame" x="303" y="452" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="hNn-lA-p4r"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNd-QH-Rbi">
-                                <rect key="frame" x="25" y="520" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="mZZ-KX-sot"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niV-M7-DVK">
-                                <rect key="frame" x="96" y="520" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="DiG-b3-j0F"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vov-lp-ktn">
-                                <rect key="frame" x="162" y="520" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="zVg-hj-Aap"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-md-t5c">
-                                <rect key="frame" x="232" y="520" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="oGH-sX-Bl4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52q-Vt-0t9">
-                                <rect key="frame" x="303" y="520" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="2R2-sF-pRV"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwt-yp-D7I">
+                                <rect key="frame" x="16" y="234.66666666666666" width="343" height="343.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Oe-zK-aoU">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="68.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPT-9z-u28">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="sPT-9z-u28" secondAttribute="height" multiplier="1:1" id="43T-bo-yww"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="43T-bo-yww"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="43T-bo-yww"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="Hsb-HP-8Wo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fN-jA-yr6">
+                                                <rect key="frame" x="68.666666666666657" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9fN-jA-yr6" secondAttribute="height" multiplier="1:1" id="6M4-G2-Mpq"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6M4-G2-Mpq"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="6M4-G2-Mpq"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="tAT-wG-J1j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3X-0M-XCV">
+                                                <rect key="frame" x="137.33333333333334" y="0.0" width="68.333333333333343" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="F3X-0M-XCV" secondAttribute="height" multiplier="1:1" id="W9d-Kb-dg1"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="W9d-Kb-dg1"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="W9d-Kb-dg1"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="0no-A0-f1e"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGA-mA-LnV">
+                                                <rect key="frame" x="205.66666666666666" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qGA-mA-LnV" secondAttribute="height" multiplier="1:1" id="XRG-q7-1fb"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="XRG-q7-1fb"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="XRG-q7-1fb"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="QCQ-hT-OJh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiY-fm-mRA">
+                                                <rect key="frame" x="274.33333333333331" y="0.0" width="68.666666666666686" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XiY-fm-mRA" secondAttribute="height" multiplier="1:1" id="ruC-aW-2XE"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="ruC-aW-2XE"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="ruC-aW-2XE"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="Jch-me-2Bv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqX-ID-uof">
+                                        <rect key="frame" x="0.0" y="68.666666666666657" width="343" height="68.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31D-29-5P5">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="31D-29-5P5" secondAttribute="height" multiplier="1:1" id="hkj-72-lTO"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="hkj-72-lTO"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="hkj-72-lTO"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="bKW-Df-mzW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-eC-MlG">
+                                                <rect key="frame" x="68.666666666666657" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gSO-eC-MlG" secondAttribute="height" multiplier="1:1" id="dwq-Un-Jro"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="dwq-Un-Jro"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="dwq-Un-Jro"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="HTF-bS-pSq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hiy-Hj-86b">
+                                                <rect key="frame" x="137.33333333333334" y="0.0" width="68.333333333333343" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Hiy-Hj-86b" secondAttribute="height" multiplier="1:1" id="YUT-sI-Em9"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="YUT-sI-Em9"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="YUT-sI-Em9"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="vH8-nK-Yaj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msO-Gk-a2K">
+                                                <rect key="frame" x="205.66666666666666" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="msO-Gk-a2K" secondAttribute="height" multiplier="1:1" id="S2A-pj-MqT"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="S2A-pj-MqT"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="S2A-pj-MqT"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="v2F-LJ-0mA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sg-Ic-Vaa">
+                                                <rect key="frame" x="274.33333333333331" y="0.0" width="68.666666666666686" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4sg-Ic-Vaa" secondAttribute="height" multiplier="1:1" id="nTw-Df-gn3"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="nTw-Df-gn3"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="nTw-Df-gn3"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="7xh-Z7-aSI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyU-n2-1Yf">
+                                        <rect key="frame" x="0.0" y="137.33333333333334" width="343" height="68.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqx-rO-Rbk">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nqx-rO-Rbk" secondAttribute="height" multiplier="1:1" id="CSD-Xf-xBV"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="CSD-Xf-xBV"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="CSD-Xf-xBV"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="Df8-hQ-gcY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEW-31-Rny">
+                                                <rect key="frame" x="68.666666666666657" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yEW-31-Rny" secondAttribute="height" multiplier="1:1" id="0XW-pu-eeL"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="0XW-pu-eeL"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="0XW-pu-eeL"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="KVD-Wv-OYp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkz-l1-dBE">
+                                                <rect key="frame" x="137.33333333333334" y="0.0" width="68.333333333333343" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lkz-l1-dBE" secondAttribute="height" multiplier="1:1" id="hlN-P4-fTv"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="hlN-P4-fTv"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="hlN-P4-fTv"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="Aoy-Tu-Mrx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR8-FV-ckf">
+                                                <rect key="frame" x="205.66666666666666" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="bR8-FV-ckf" secondAttribute="height" multiplier="1:1" id="qho-Ga-bA9"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="qho-Ga-bA9"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="qho-Ga-bA9"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="ALm-dh-KaE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lae-CF-fof">
+                                                <rect key="frame" x="274.33333333333331" y="0.0" width="68.666666666666686" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Lae-CF-fof" secondAttribute="height" multiplier="1:1" id="fdP-6c-OAP"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="fdP-6c-OAP"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="fdP-6c-OAP"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="L7N-zv-6UO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpU-ai-JB8">
+                                        <rect key="frame" x="0.0" y="206.00000000000003" width="343" height="68.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfD-wC-fYl">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kfD-wC-fYl" secondAttribute="height" multiplier="1:1" id="xi9-ml-Ig3"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="xi9-ml-Ig3"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="xi9-ml-Ig3"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="AaO-Nj-NzP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVg-Lz-sSs">
+                                                <rect key="frame" x="68.666666666666657" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="EVg-Lz-sSs" secondAttribute="height" multiplier="1:1" id="y2t-HQ-SQA"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="y2t-HQ-SQA"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="y2t-HQ-SQA"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="rEf-LA-i0V"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XD9-XJ-Tim">
+                                                <rect key="frame" x="137.33333333333334" y="0.0" width="68.333333333333343" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XD9-XJ-Tim" secondAttribute="height" multiplier="1:1" id="Hmu-tJ-hqo"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Hmu-tJ-hqo"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="Hmu-tJ-hqo"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="4Fy-oc-4cU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osU-0d-1bA">
+                                                <rect key="frame" x="205.66666666666666" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="osU-0d-1bA" secondAttribute="height" multiplier="1:1" id="dqf-PG-BZC"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="dqf-PG-BZC"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="dqf-PG-BZC"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="xbS-sX-g50"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2B-zH-KLC">
+                                                <rect key="frame" x="274.33333333333331" y="0.0" width="68.666666666666686" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="h2B-zH-KLC" secondAttribute="height" multiplier="1:1" id="aYm-HJ-nxM"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="aYm-HJ-nxM"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="aYm-HJ-nxM"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="hNn-lA-p4r"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzt-WG-Yir">
+                                        <rect key="frame" x="0.0" y="274.66666666666663" width="343" height="68.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNd-QH-Rbi">
+                                                <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nNd-QH-Rbi" secondAttribute="height" multiplier="1:1" id="6XI-Ih-RL4"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6XI-Ih-RL4"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="6XI-Ih-RL4"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="mZZ-KX-sot"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niV-M7-DVK">
+                                                <rect key="frame" x="68.666666666666657" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="niV-M7-DVK" secondAttribute="height" multiplier="1:1" id="jHN-cq-4BE"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="jHN-cq-4BE"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="jHN-cq-4BE"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="DiG-b3-j0F"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vov-lp-ktn">
+                                                <rect key="frame" x="137.33333333333334" y="0.0" width="68.333333333333343" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="vov-lp-ktn" secondAttribute="height" multiplier="1:1" id="2NQ-gC-QgP"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="2NQ-gC-QgP"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="2NQ-gC-QgP"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="zVg-hj-Aap"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-md-t5c">
+                                                <rect key="frame" x="205.66666666666666" y="0.0" width="68.666666666666657" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="YlM-md-t5c" secondAttribute="height" multiplier="1:1" id="x4W-B1-h79"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="x4W-B1-h79"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="x4W-B1-h79"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="oGH-sX-Bl4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52q-Vt-0t9">
+                                                <rect key="frame" x="274.33333333333331" y="0.0" width="68.666666666666686" height="68.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="52q-Vt-0t9" secondAttribute="height" multiplier="1:1" id="M4h-8B-1Fh"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="M4h-8B-1Fh"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="M4h-8B-1Fh"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="action:" destination="dGP-BP-Vf3" eventType="touchUpInside" id="2R2-sF-pRV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dwt-yp-D7I" secondAttribute="height" multiplier="1:1" id="Ha8-Ng-vFp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ha8-Ng-vFp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" axis="vertical">
+                                    <mask key="constraints">
+                                        <include reference="Ha8-Ng-vFp"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZkX-Oo-fjv" firstAttribute="trailing" secondItem="Y84-9f-ZFC" secondAttribute="trailing" id="8Cm-wm-RRE"/>
                             <constraint firstItem="hDH-Vm-fSu" firstAttribute="centerY" secondItem="GkK-PA-i07" secondAttribute="centerY" id="Bp2-98-jcX"/>
+                            <constraint firstItem="Dwt-yp-D7I" firstAttribute="centerY" secondItem="GkK-PA-i07" secondAttribute="centerY" id="Hg8-H5-7ON"/>
                             <constraint firstItem="Y84-9f-ZFC" firstAttribute="trailing" secondItem="wmS-RR-j7V" secondAttribute="trailing" constant="16" id="I6R-k4-IWa"/>
+                            <constraint firstItem="Dwt-yp-D7I" firstAttribute="leading" secondItem="Y84-9f-ZFC" secondAttribute="leading" constant="16" id="Njd-ae-qvD"/>
                             <constraint firstAttribute="trailing" secondItem="hDH-Vm-fSu" secondAttribute="trailing" constant="16" id="XDM-CD-6wR"/>
+                            <constraint firstItem="Y84-9f-ZFC" firstAttribute="trailing" secondItem="Dwt-yp-D7I" secondAttribute="trailing" constant="16" id="b5u-gt-vwq"/>
                             <constraint firstItem="ZkX-Oo-fjv" firstAttribute="leading" secondItem="Y84-9f-ZFC" secondAttribute="leading" id="cFL-UU-Aw1"/>
                             <constraint firstItem="wmS-RR-j7V" firstAttribute="top" secondItem="ZkX-Oo-fjv" secondAttribute="bottom" constant="20" id="hWH-qW-oaU"/>
                             <constraint firstItem="ZkX-Oo-fjv" firstAttribute="top" secondItem="Y84-9f-ZFC" secondAttribute="top" id="iw7-QJ-0Kp"/>
                             <constraint firstItem="wmS-RR-j7V" firstAttribute="leading" secondItem="Y84-9f-ZFC" secondAttribute="leading" constant="16" id="nSe-Mc-2dE"/>
+                            <constraint firstItem="Dwt-yp-D7I" firstAttribute="centerX" secondItem="GkK-PA-i07" secondAttribute="centerX" id="oVn-6m-g2D"/>
                             <constraint firstItem="hDH-Vm-fSu" firstAttribute="centerX" secondItem="GkK-PA-i07" secondAttribute="centerX" id="ojk-7b-Sb7"/>
                             <constraint firstItem="hDH-Vm-fSu" firstAttribute="leading" secondItem="GkK-PA-i07" secondAttribute="leading" constant="16" id="zg9-e7-S9D"/>
                         </constraints>
@@ -569,34 +920,10 @@
                                 <exclude reference="ZkX-Oo-fjv"/>
                                 <exclude reference="wmS-RR-j7V"/>
                                 <exclude reference="hDH-Vm-fSu"/>
-                                <exclude reference="sPT-9z-u28"/>
-                                <exclude reference="9fN-jA-yr6"/>
-                                <exclude reference="F3X-0M-XCV"/>
-                                <exclude reference="qGA-mA-LnV"/>
-                                <exclude reference="XiY-fm-mRA"/>
-                                <exclude reference="31D-29-5P5"/>
-                                <exclude reference="gSO-eC-MlG"/>
-                                <exclude reference="Hiy-Hj-86b"/>
-                                <exclude reference="msO-Gk-a2K"/>
-                                <exclude reference="4sg-Ic-Vaa"/>
-                                <exclude reference="nqx-rO-Rbk"/>
-                                <exclude reference="yEW-31-Rny"/>
-                                <exclude reference="lkz-l1-dBE"/>
-                                <exclude reference="bR8-FV-ckf"/>
-                                <exclude reference="Lae-CF-fof"/>
-                                <exclude reference="kfD-wC-fYl"/>
-                                <exclude reference="EVg-Lz-sSs"/>
-                                <exclude reference="XD9-XJ-Tim"/>
-                                <exclude reference="osU-0d-1bA"/>
-                                <exclude reference="h2B-zH-KLC"/>
-                                <exclude reference="nNd-QH-Rbi"/>
-                                <exclude reference="niV-M7-DVK"/>
-                                <exclude reference="vov-lp-ktn"/>
-                                <exclude reference="YlM-md-t5c"/>
-                                <exclude reference="52q-Vt-0t9"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="I6R-k4-IWa"/>
+                                <exclude reference="b5u-gt-vwq"/>
                                 <exclude reference="8Cm-wm-RRE"/>
                                 <exclude reference="cFL-UU-Aw1"/>
                                 <exclude reference="iw7-QJ-0Kp"/>
@@ -606,6 +933,9 @@
                                 <exclude reference="XDM-CD-6wR"/>
                                 <exclude reference="ojk-7b-Sb7"/>
                                 <exclude reference="zg9-e7-S9D"/>
+                                <exclude reference="Hg8-H5-7ON"/>
+                                <exclude reference="Njd-ae-qvD"/>
+                                <exclude reference="oVn-6m-g2D"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -613,34 +943,10 @@
                                 <include reference="ZkX-Oo-fjv"/>
                                 <include reference="wmS-RR-j7V"/>
                                 <include reference="hDH-Vm-fSu"/>
-                                <include reference="sPT-9z-u28"/>
-                                <include reference="9fN-jA-yr6"/>
-                                <include reference="F3X-0M-XCV"/>
-                                <include reference="qGA-mA-LnV"/>
-                                <include reference="XiY-fm-mRA"/>
-                                <include reference="31D-29-5P5"/>
-                                <include reference="gSO-eC-MlG"/>
-                                <include reference="Hiy-Hj-86b"/>
-                                <include reference="msO-Gk-a2K"/>
-                                <include reference="4sg-Ic-Vaa"/>
-                                <include reference="nqx-rO-Rbk"/>
-                                <include reference="yEW-31-Rny"/>
-                                <include reference="lkz-l1-dBE"/>
-                                <include reference="bR8-FV-ckf"/>
-                                <include reference="Lae-CF-fof"/>
-                                <include reference="kfD-wC-fYl"/>
-                                <include reference="EVg-Lz-sSs"/>
-                                <include reference="XD9-XJ-Tim"/>
-                                <include reference="osU-0d-1bA"/>
-                                <include reference="h2B-zH-KLC"/>
-                                <include reference="nNd-QH-Rbi"/>
-                                <include reference="niV-M7-DVK"/>
-                                <include reference="vov-lp-ktn"/>
-                                <include reference="YlM-md-t5c"/>
-                                <include reference="52q-Vt-0t9"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="I6R-k4-IWa"/>
+                                <include reference="b5u-gt-vwq"/>
                                 <include reference="8Cm-wm-RRE"/>
                                 <include reference="cFL-UU-Aw1"/>
                                 <include reference="iw7-QJ-0Kp"/>
@@ -650,6 +956,9 @@
                                 <include reference="XDM-CD-6wR"/>
                                 <include reference="ojk-7b-Sb7"/>
                                 <include reference="zg9-e7-S9D"/>
+                                <include reference="Hg8-H5-7ON"/>
+                                <include reference="Njd-ae-qvD"/>
+                                <include reference="oVn-6m-g2D"/>
                             </mask>
                         </variation>
                     </view>

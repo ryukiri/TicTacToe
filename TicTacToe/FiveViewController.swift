@@ -177,8 +177,233 @@ class FiveViewController: UIViewController {
                 }
             }
             gameData[8] = activePlayer
+        case 10:
+            if (gameData[9] == 0) {
+                if (activePlayer == 1) {
+                    button10.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button10.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[9] = activePlayer
+        case 11:
+            if (gameData[10] == 0) {
+                if (activePlayer == 1) {
+                    button11.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button11.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[10] = activePlayer
+        case 12:
+            if (gameData[11] == 0) {
+                if (activePlayer == 1) {
+                    button12.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button12.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[11] = activePlayer
+        case 13:
+            if (gameData[12] == 0) {
+                if (activePlayer == 1) {
+                    button13.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button13.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[12] = activePlayer
+        case 14:
+            if (gameData[13] == 0) {
+                if (activePlayer == 1) {
+                    button14.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button14.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[13] = activePlayer
+        case 15:
+            if (gameData[14] == 0) {
+                if (activePlayer == 1) {
+                    button15.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button15.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[14] = activePlayer
+        case 15:
+            if (gameData[14] == 0) {
+                if (activePlayer == 1) {
+                    button15.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button15.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[14] = activePlayer
+        case 16:
+            if (gameData[15] == 0) {
+                if (activePlayer == 1) {
+                    button16.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button16.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[15] = activePlayer
+        case 17:
+            if (gameData[16] == 0) {
+                if (activePlayer == 1) {
+                    button17.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button17.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[16] = activePlayer
+        case 18:
+            if (gameData[17] == 0) {
+                if (activePlayer == 1) {
+                    button18.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button18.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[17] = activePlayer
+        case 19:
+            if (gameData[18] == 0) {
+                if (activePlayer == 1) {
+                    button19.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button19.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[18] = activePlayer
+        case 20:
+            if (gameData[19] == 0) {
+                if (activePlayer == 1) {
+                    button20.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button20.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[19] = activePlayer
+        case 21:
+            if (gameData[20] == 0) {
+                if (activePlayer == 1) {
+                    button21.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button21.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[20] = activePlayer
+        case 22:
+            if (gameData[21] == 0) {
+                if (activePlayer == 1) {
+                    button22.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button22.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[21] = activePlayer
+        case 23:
+            if (gameData[22] == 0) {
+                if (activePlayer == 1) {
+                    button23.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button23.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[22] = activePlayer
+        case 24:
+            if (gameData[23] == 0) {
+                if (activePlayer == 1) {
+                    button24.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button24.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[23] = activePlayer
+        case 25:
+            if (gameData[24] == 0) {
+                if (activePlayer == 1) {
+                    button25.setImage(UIImage(named: "Cross.png"), for: UIControlState())
+                    activePlayer = 2
+                } else {
+                    button25.setImage(UIImage(named: "Nought.png"), for: UIControlState())
+                    activePlayer = 1
+                }
+            }
+            gameData[24] = activePlayer
         default:
             print("")
         }
     }
+    
+    @IBAction func settings(_ sender: Any) {
+        let alert = UIAlertController(title: "Players", message: "Edit Players Names:", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addTextField(configurationHandler: addTextField1)
+        alert.addTextField(configurationHandler: addTextField2)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: { (UIAlertAction)in
+            print("Cancel")
+        }))
+        alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
+            if self.txtField1.text != "" {
+                UserDefaults.standard.set(self.txtField1.text, forKey: "p1")
+            }
+            
+            if self.txtField2.text != "" {
+                UserDefaults.standard.set(self.txtField2.text, forKey: "p2")
+            }
+            
+            self.p1.text = UserDefaults.standard.string(forKey: "p1")
+            self.p2.text = UserDefaults.standard.string(forKey: "p2")
+            
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func addTextField1(textField: UITextField!)
+    {
+        textField.placeholder = "Player 1"
+        txtField1 = textField
+    }
+    
+    func addTextField2(textField: UITextField!)
+    {
+        textField.placeholder = "Player 2"
+        txtField2 = textField
+    }
+    
 }
