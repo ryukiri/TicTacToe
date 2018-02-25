@@ -483,7 +483,7 @@ class FiveViewController: UIViewController {
         }
         let alert = UIAlertController(title: "Game Over", message: "Tie Game.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
-            var newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "home") as! ViewController
+            let newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "home") as! ViewController
             self.present(newGameViewController, animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)

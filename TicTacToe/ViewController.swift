@@ -53,6 +53,33 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func newGame4(_ sender: Any) {
+        let alert = UIAlertController(title: "Players", message: "Enter Players Names:", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addTextField(configurationHandler: addTextField1)
+        alert.addTextField(configurationHandler: addTextField2)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: { (UIAlertAction)in
+            print("Cancel")
+        }))
+        alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
+            if self.txtField1.text == "" {
+                self.txtField1.text = "Player 1"
+            }
+            
+            if self.txtField2.text == "" {
+                self.txtField2.text = "Player 2"
+            }
+            
+            UserDefaults.standard.set(self.txtField1.text, forKey: "p1")
+            UserDefaults.standard.set(self.txtField2.text, forKey: "p2")
+            let newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "four") as! FourViewController
+            self.present(newGameViewController, animated: true, completion: nil)
+            
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func newGame5(_ sender: Any) {
         let alert = UIAlertController(title: "Players", message: "Enter Players Names:", preferredStyle: UIAlertControllerStyle.alert)
         
