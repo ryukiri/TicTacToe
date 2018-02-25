@@ -403,7 +403,7 @@ class FiveViewController: UIViewController {
             displayWinner()
         } else if gameData[22] == gameData[23] && gameData[23] == gameData[24] && (gameData[23] == 1 || gameData[23] == 2){
             displayWinner()
-        } // Horizontals left to right
+        } // Diagonal left to right
         else if gameData[0] == gameData[6] && gameData[6] == gameData[12] && (gameData[6] == 1 || gameData[6] == 2){
             displayWinner()
         } else if gameData[1] == gameData[7] && gameData[7] == gameData[13] && (gameData[7] == 1 || gameData[7] == 2){
@@ -422,7 +422,7 @@ class FiveViewController: UIViewController {
             displayWinner()
         } else if gameData[12] == gameData[18] && gameData[18] == gameData[24] && (gameData[18] == 1 || gameData[18] == 2){
             displayWinner()
-        } // Horizontals right to left
+        } // Diagonal right to left
         else if gameData[4] == gameData[8] && gameData[8] == gameData[12] && (gameData[8] == 1 || gameData[8] == 2){
             displayWinner()
         } else if gameData[3] == gameData[7] && gameData[7] == gameData[11] && (gameData[7] == 1 || gameData[7] == 2){
