@@ -220,9 +220,6 @@ class GameViewController: UIViewController {
     }
     
     func displayWinner() {
-        //var activePlayer = 1
-        //var gameData = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-        
         let alert = UIAlertController(title: "Game Over", message: "Another Game?", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
             let newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "home") as! ViewController
@@ -233,7 +230,6 @@ class GameViewController: UIViewController {
             self.present(newGameViewController, animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
-        
     }
     
     @IBAction func settingsAction(_ sender: Any) {

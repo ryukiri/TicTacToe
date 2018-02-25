@@ -367,6 +367,140 @@ class FiveViewController: UIViewController {
         default:
             print("")
         }
+        
+        checkWinner()
+        checkTie()
+    }
+    
+    func checkWinner() {
+        if gameData[0] == gameData[1] && gameData[1] == gameData[2] && (gameData[1] == 1 || gameData[1] == 2){
+            displayWinner()
+        } else if gameData[1] == gameData[2] && gameData[2] == gameData[3] && (gameData[2] == 1 || gameData[2] == 2){
+            displayWinner()
+        } else if gameData[2] == gameData[3] && gameData[3] == gameData[4] && (gameData[3] == 1 || gameData[3] == 2){
+            displayWinner()
+        } else if gameData[5] == gameData[6] && gameData[6] == gameData[7] && (gameData[6] == 1 || gameData[6] == 2){
+            displayWinner()
+        } else if gameData[6] == gameData[7] && gameData[7] == gameData[8] && (gameData[7] == 1 || gameData[7] == 2){
+            displayWinner()
+        } else if gameData[7] == gameData[8] && gameData[8] == gameData[9] && (gameData[8] == 1 || gameData[8] == 2){
+            displayWinner()
+        } else if gameData[10] == gameData[11] && gameData[11] == gameData[12] && (gameData[11] == 1 || gameData[11] == 2){
+            displayWinner()
+        } else if gameData[11] == gameData[12] && gameData[12] == gameData[13] && (gameData[12] == 1 || gameData[12] == 2){
+            displayWinner()
+        } else if gameData[13] == gameData[14] && gameData[14] == gameData[15] && (gameData[14] == 1 || gameData[14] == 2){
+            displayWinner()
+        } else if gameData[16] == gameData[17] && gameData[17] == gameData[18] && (gameData[17] == 1 || gameData[17] == 2){
+            displayWinner()
+        } else if gameData[17] == gameData[18] && gameData[18] == gameData[19] && (gameData[18] == 1 || gameData[18] == 2){
+            displayWinner()
+        } else if gameData[18] == gameData[19] && gameData[19] == gameData[20] && (gameData[19] == 1 || gameData[19] == 2){
+            displayWinner()
+        } else if gameData[20] == gameData[21] && gameData[21] == gameData[22] && (gameData[21] == 1 || gameData[21] == 2){
+            displayWinner()
+        } else if gameData[21] == gameData[22] && gameData[22] == gameData[23] && (gameData[22] == 1 || gameData[22] == 2){
+            displayWinner()
+        } else if gameData[22] == gameData[23] && gameData[23] == gameData[24] && (gameData[23] == 1 || gameData[23] == 2){
+            displayWinner()
+        } // Horizontals left to right
+        else if gameData[0] == gameData[6] && gameData[6] == gameData[12] && (gameData[6] == 1 || gameData[6] == 2){
+            displayWinner()
+        } else if gameData[1] == gameData[7] && gameData[7] == gameData[13] && (gameData[7] == 1 || gameData[7] == 2){
+            displayWinner()
+        } else if gameData[2] == gameData[8] && gameData[8] == gameData[14] && (gameData[8] == 1 || gameData[8] == 2){
+            displayWinner()
+        } else if gameData[5] == gameData[11] && gameData[11] == gameData[17] && (gameData[11] == 1 || gameData[11] == 2){
+            displayWinner()
+        } else if gameData[6] == gameData[12] && gameData[12] == gameData[18] && (gameData[12] == 1 || gameData[12] == 2){
+            displayWinner()
+        } else if gameData[7] == gameData[13] && gameData[13] == gameData[19] && (gameData[13] == 1 || gameData[13] == 2){
+            displayWinner()
+        } else if gameData[10] == gameData[16] && gameData[16] == gameData[22] && (gameData[16] == 1 || gameData[16] == 2){
+            displayWinner()
+        } else if gameData[11] == gameData[17] && gameData[17] == gameData[23] && (gameData[17] == 1 || gameData[17] == 2){
+            displayWinner()
+        } else if gameData[12] == gameData[18] && gameData[18] == gameData[24] && (gameData[18] == 1 || gameData[18] == 2){
+            displayWinner()
+        } // Horizontals right to left
+        else if gameData[4] == gameData[8] && gameData[8] == gameData[12] && (gameData[8] == 1 || gameData[8] == 2){
+            displayWinner()
+        } else if gameData[3] == gameData[7] && gameData[7] == gameData[11] && (gameData[7] == 1 || gameData[7] == 2){
+            displayWinner()
+        } else if gameData[2] == gameData[6] && gameData[6] == gameData[10] && (gameData[6] == 1 || gameData[6] == 2){
+            displayWinner()
+        } else if gameData[9] == gameData[13] && gameData[13] == gameData[17] && (gameData[13] == 1 || gameData[13] == 2){
+            displayWinner()
+        } else if gameData[8] == gameData[12] && gameData[12] == gameData[16] && (gameData[12] == 1 || gameData[12] == 2){
+            displayWinner()
+        } else if gameData[7] == gameData[11] && gameData[11] == gameData[15] && (gameData[11] == 1 || gameData[11] == 2){
+            displayWinner()
+        } else if gameData[14] == gameData[18] && gameData[18] == gameData[22] && (gameData[18] == 1 || gameData[18] == 2){
+            displayWinner()
+        } else if gameData[13] == gameData[17] && gameData[17] == gameData[21] && (gameData[17] == 1 || gameData[17] == 2){
+            displayWinner()
+        } else if gameData[12] == gameData[16] && gameData[16] == gameData[20] && (gameData[16] == 1 || gameData[16] == 2){
+            displayWinner()
+        } // Vertical
+        else if gameData[0] == gameData[5] && gameData[5] == gameData[10] && (gameData[5] == 1 || gameData[5] == 2){
+            displayWinner()
+        } else if gameData[1] == gameData[6] && gameData[6] == gameData[11] && (gameData[6] == 1 || gameData[6] == 2){
+            displayWinner()
+        } else if gameData[2] == gameData[7] && gameData[7] == gameData[12] && (gameData[7] == 1 || gameData[7] == 2){
+            displayWinner()
+        } else if gameData[3] == gameData[8] && gameData[8] == gameData[13] && (gameData[8] == 1 || gameData[8] == 2){
+            displayWinner()
+        } else if gameData[4] == gameData[9] && gameData[9] == gameData[14] && (gameData[9] == 1 || gameData[9] == 2){
+            displayWinner()
+        } else if gameData[5] == gameData[10] && gameData[10] == gameData[15] && (gameData[10] == 1 || gameData[10] == 2){
+            displayWinner()
+        } else if gameData[6] == gameData[11] && gameData[11] == gameData[16] && (gameData[11] == 1 || gameData[11] == 2){
+            displayWinner()
+        } else if gameData[7] == gameData[12] && gameData[12] == gameData[17] && (gameData[12] == 1 || gameData[12] == 2){
+            displayWinner()
+        } else if gameData[8] == gameData[13] && gameData[13] == gameData[18] && (gameData[13] == 1 || gameData[13] == 2){
+            displayWinner()
+        } else if gameData[9] == gameData[14] && gameData[14] == gameData[19] && (gameData[14] == 1 || gameData[14] == 2){
+            displayWinner()
+        } else if gameData[10] == gameData[15] && gameData[15] == gameData[20] && (gameData[15] == 1 || gameData[15] == 2){
+            displayWinner()
+        } else if gameData[11] == gameData[16] && gameData[16] == gameData[21] && (gameData[16] == 1 || gameData[16] == 2){
+            displayWinner()
+        } else if gameData[12] == gameData[17] && gameData[17] == gameData[22] && (gameData[17] == 1 || gameData[17] == 2){
+            displayWinner()
+        } else if gameData[13] == gameData[18] && gameData[18] == gameData[23] && (gameData[18] == 1 || gameData[18] == 2){
+            displayWinner()
+        } else if gameData[14] == gameData[19] && gameData[19] == gameData[24] && (gameData[19] == 1 || gameData[19] == 2){
+            displayWinner()
+        }
+    }
+    
+    func checkTie() -> Bool {
+        for i in gameData {
+            if i == 0 {
+                return false
+            }
+        }
+        let alert = UIAlertController(title: "Game Over", message: "Tie Game.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
+            var newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "home") as! ViewController
+            self.present(newGameViewController, animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+        return true
+    }
+    
+    func displayWinner() {
+        let alert = UIAlertController(title: "Game Over", message: "Another Game?", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
+            let newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "home") as! ViewController
+            self.present(newGameViewController, animated: true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler:{ (UIAlertAction)in
+            let newGameViewController = self.storyboard?.instantiateViewController(withIdentifier: "five") as! FiveViewController
+            self.present(newGameViewController, animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func settings(_ sender: Any) {
